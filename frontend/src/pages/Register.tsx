@@ -13,7 +13,7 @@ const Register: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/register', { name, email, password });
+      await axios.post('https://backend-7-di1k.onrender.com/api/register', { name, email, password });
       navigate('/login');
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {

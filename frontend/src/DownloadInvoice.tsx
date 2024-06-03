@@ -7,7 +7,7 @@ const DownloadInvoice: React.FC = () => {
 
   const handleGeneratePDF = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/generate-pdf', {
+      const response = await fetch('https://backend-7-di1k.onrender.com/api/generate-pdf', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
